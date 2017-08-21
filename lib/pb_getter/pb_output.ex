@@ -41,8 +41,8 @@ defmodule PbGetter.Pb_Output do
   end
 
   defp rss_content([ head | tail], content) do
-    content = Enum.join([content, "<title>", elem(head, 0), "</title>\n"])
-    content = Enum.join([content, "<link>", elem(head, 1), "</link>\n"])
+    content = Enum.join([content, "<item>\n<title>", elem(head, 0), "</title>\n"])
+    content = Enum.join([content, "<link>", elem(head, 1), "</link>\n</item>\n"])
     rss_content(tail, content)
   end
 
