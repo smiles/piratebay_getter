@@ -82,7 +82,25 @@ defmodule PbGetter.Pb_Args do
  
  Usage: [option] [--tor] [--file/--rss] [search item]
   
- -s, --seed    Sort by seed descending order.
+ -s, --seed          Sort by seed descending order.
+ -S, --asce_seed     Sort by seed ascending order.
+ -l, --leech         Sort by leech descending order.
+ -L, --asce_leech    Sort by leech ascending order.
+ -u, --upload        Sort by upload descending order.
+ -U, --asce_upload   Sort by upload ascending order.
+ -i, --size          Sort by size descending order.
+ -I, --asce_size     Sort by size ascending order.
+ -b, --ul_by         Sort by uploaded by descending order.
+ -B, --asce_ul_by    Sort by uploaded by ascending order.
+
+ --tor               Uses onion address instead of thepiratebay.org. You need to 
+                        use your own redirect proxy such as torsocks or proxychains.
+
+ --file              Writes output to a file instead of terminal. Need a full
+                        path to the file. Example /home/user/file.txt
+ 
+ --rss               Generates a rss file. Need a full path to the file.
+                        Example /home/user/file.rss
     """
   end
 end
