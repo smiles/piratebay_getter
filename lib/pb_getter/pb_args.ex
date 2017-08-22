@@ -102,5 +102,6 @@ defmodule PbGetter.Pb_Args do
  --rss               Generates a rss file. Need a full path to the file.
                         Example /home/user/file.rss
     """
+   exit(:normal) 
   end
 end
